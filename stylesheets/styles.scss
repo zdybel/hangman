@@ -1,0 +1,54 @@
+body{
+	background-color: black;
+}
+.titleBar{
+	height: 200px;
+	background-color: pink;
+}
+.notTitleBar{
+	height: 600px;
+	background-color:blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.size{
+	height: 80%;
+	background-color: orange;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.images{
+	height: 300px;
+	background-color: purple;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.image{
+	height: 100px;
+	background-color: red;
+
+}
+.hintBox{
+	height: 100px;
+	background-color: green;
+}
+.words{
+	height: 300px;
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.word{
+	height: 100px;
+	background-color: red;
+
+}
+.guess{
+	height: 100px;
+	background-color: green;
+}
