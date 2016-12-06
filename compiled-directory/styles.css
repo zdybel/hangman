@@ -1,53 +1,71 @@
-body {
-  background-color: black; }
-
 .titleBar {
   height: 200px;
   background-color: pink; }
 
 .notTitleBar {
-  height: 600px;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  height: 600px; }
 
-.size {
-  height: 80%;
+.content {
+  height: 100%;
   background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
 
-.images {
-  height: 300px;
-  background-color: purple;
+.game {
+  height: 100%; }
+
+.image-container {
+  height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; }
 
 .image {
-  height: 100px;
+  height: 80%;
   background-color: red; }
 
-.hintBox {
-  height: 100px;
+.hint-container {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; }
+
+.hint {
+  height: 80%;
   background-color: green; }
 
-.words {
-  height: 300px;
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+.player {
+  height: 100%;
+  background-color: yellow; }
 
-.word {
-  height: 100px;
+.puzzle-container {
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; }
+
+.puzzle {
+  height: 80%;
   background-color: red; }
 
+.guess-container {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; }
+
 .guess {
-  height: 100px;
+  height: 80%;
   background-color: green; }
 
 /*# sourceMappingURL=styles.css.map */

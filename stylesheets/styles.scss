@@ -1,54 +1,82 @@
-body{
-	background-color: black;
-}
 .titleBar{
 	height: 200px;
 	background-color: pink;
 }
 .notTitleBar{
 	height: 600px;
-	background-color:blue;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 }
-.size{
-	height: 80%;
+.content{
+	height: 100%;
+	// is 100% of notTitleBar
 	background-color: orange;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
-.images{
-	height: 300px;
-	background-color: purple;
+.game{
+	height: 100%;
+	//is % of content
+}
+.image-container{
+	height: 70%;
+	//% of game it takes up
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
 }
 .image{
-	height: 100px;
+	height: 80%;
+	//% of image-container
 	background-color: red;
-
 }
-.hintBox{
-	height: 100px;
+.hint-container{
+	height: 30%;
+	//% of game 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+.hint{
+	height: 80%;
+	//%of hint-container 
 	background-color: green;
 }
-.words{
-	height: 300px;
+.player{
+	height: 100%;
+	//% of content
 	background-color: yellow;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 }
-.word{
-	height: 100px;
+.puzzle-container{
+	height: 70%;
+	//% of player
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+.puzzle{
+	height: 80%;
+	//%of puzzle-container;
 	background-color: red;
 
 }
+.guess-container{
+	height: 30%;
+	//% of player 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
 .guess{
-	height: 100px;
+	height: 80%;
+	//%of guess-container 
 	background-color: green;
 }
