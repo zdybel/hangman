@@ -1,82 +1,15 @@
-.titleBar{
-	height: 200px;
-	background-color: pink;
-}
+
+@import 'variables';
+@import 'content';
+@import 'batteryContainer';
+@import 'hintContainer';
+@import 'puzzleContainer';
+@import 'guessContainer';
+
 .notTitleBar{
 	height: 600px;
 }
-.content{
-	height: 100%;
-	// is 100% of notTitleBar
-	background-color: orange;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-.game{
-	height: 100%;
-	//is % of content
-}
-.image-container{
-	height: 70%;
-	//% of game it takes up
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-}
-.image{
-	height: 80%;
-	//% of image-container
-	background-color: red;
-}
-.hint-container{
-	height: 30%;
-	//% of game 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: white;
-}
-.hint{
-	height: 80%;
-	//%of hint-container 
-	background-color: green;
-}
-.player{
-	height: 100%;
-	//% of content
-	background-color: yellow;
-}
-.puzzle-container{
-	height: 70%;
-	//% of player
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-}
-.puzzle{
-	height: 80%;
-	//%of puzzle-container;
-	background-color: red;
-
-}
-.guess-container{
-	height: 30%;
-	//% of player 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: white;
-}
-.guess{
-	height: 80%;
-	//%of guess-container 
-	background-color: green;
+.titleBar{
+	height: 200px;
+	background-color: pink;
 }

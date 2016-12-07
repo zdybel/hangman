@@ -1,0 +1,36 @@
+
+.battery-container{
+	height: 60%;
+	//% of image-container
+}
+.batteryTop-container{
+	height: 20%;
+	background-color: $background-color-two;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.batteryTop{
+	height: 80%;
+	background-color: $foreground-color-one;
+}
+.batteryBottom-container{
+	height:80%;
+}
+.batteryBottom{
+	height: 100%;
+	background-color: $foreground-color-one;
+}
+.bar{
+	height: 25%;
+	border: solid 3px gray;
+	background-color:black;
+}
+
+//change to this when wrong:
+// .bar1{
+// 	height: 20%;
+// 	border: solid 3px gray;
+// 	background-color: gray;
+// }

@@ -1,0 +1,26 @@
+.guess{
+	height: 80%;
+	//%of guess-container 
+	background-color: $foreground-color-two;
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#guessInput{
+	font-size: $input-font-size;
+	width: $input-font-size*2;
+}
+#guessButton{
+	font-size: $input-font-size;
+	padding: $input-font-size/10;
+}
+#solveInput{
+	font-size: $input-font-size;
+	width: $input-font-size*14;
+}
+#solveButton{
+	font-size: $input-font-size;
+}

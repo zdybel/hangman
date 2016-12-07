@@ -1,0 +1,9 @@
+.hint{
+	height: 80%;
+	//%of hint-container 
+	background-color: $foreground-color-two;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

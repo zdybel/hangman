@@ -1,0 +1,57 @@
+.content{
+	height: 100%;
+	// is 100% of notTitleBar
+	background-color: orange;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.game{
+	height: 100%;
+	//is % of content
+}
+.phone-container{
+	height: 70%;
+	//% of game it takes up
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url("http://www.fresnocellphonerepaircompany.com/uploads/5/4/6/6/54663167/_6131720_orig.jpg");
+	background-size: 160% 115%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.hint-container{
+	height: 30%;
+	//% of game 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color-one;
+}
+.player{
+	height: 100%;
+	//% of content
+	background-color: yellow;
+}
+.puzzle-container{
+	height: 60%;
+	//% of player
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color-two;
+}
+.guess-container{
+	height: 40%;
+	//% of player 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color-one;
+}
