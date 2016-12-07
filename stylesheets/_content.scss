@@ -1,7 +1,6 @@
 .content{
 	height: 100%;
 	// is 100% of notTitleBar
-	background-color: orange;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -30,12 +29,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: $background-color-one;
+	margin-top: -($input-font-size*2);
 }
 .player{
 	height: 100%;
 	//% of content
-	background-color: yellow;
 }
 .puzzle-container{
 	height: 60%;
@@ -44,14 +42,12 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: $background-color-two;
 }
-.guess-container{
+.guessed-container{
 	height: 40%;
 	//% of player 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: $background-color-one;
 }

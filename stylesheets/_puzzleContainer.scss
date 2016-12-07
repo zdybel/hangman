@@ -1,24 +1,15 @@
 .puzzle{
 	height: 100%;
 	//%of puzzle-container;
-	background-color: $foreground-color-one;
-
 }
 .answer-container{
 	height:50%;
-	background-color: yellow;
-}
-.guessed-container{
-	height:30%;
-	background-color: blue;
-}
-#guessed{
-	font-size: $input-font-size;
 }
 .letterBox{
 	border: solid 2px black;
 	display: inline;
-	font-size: $input-font-size*1.8;
+	font-size: $input-font-size*2.6;
+	margin: $input-font-size/20;
 }
 .letter{
 	display: inline;
@@ -31,4 +22,27 @@
 }
 .prosper{
 	margin-left: $input-font-size*1.5;
+}
+.guess-container{
+	margin-top: $input-font-size*1.5;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#guessInput{
+	font-size: $input-font-size;
+	width: $input-font-size*2;
+}
+#guessButton{
+	font-size: $input-font-size;
+	padding: $input-font-size/10;
+}
+#solveInput{
+	font-size: $input-font-size;
+	width: $input-font-size*14;
+}
+#solveButton{
+	font-size: $input-font-size;
 }
