@@ -20,23 +20,119 @@
 		<div class='row'>
 			<div class='col-sm-11 notTitleBar'>
 					<div class='row content'>
-						<div class='col-sm-4 game'>
-							<div class='row image-container'>
-								<div class='col-sm-10 image'>
-								</div>
+						<div class='col-sm-3 game'>
+							<div class='phone-container'>
+									<div class='col-sm-6 col-sm-offset-3 battery-container'>
+										<div class='row batteryTop-container'>
+											<div class='col-sm-7 batteryTop'>
+											</div>
+										</div>
+										<div class='row batteryBottom-container'>
+											<div class='col-sm-12 batteryBottom'>
+												<div class='row bar'>
+												</div>
+												<div class='row bar'>
+												</div>
+												<div class='row bar'>
+												</div>
+												<div class='row bar'>
+												</div>
+											</div>
+										</div>
+									</div>
 							</div>
 							<div class='row hint-container'>
-									<div class='col-sm-10 hint'>
+									<div class='col-sm-12 hint'>
+										<h2 id='hint'>HINT</h2>
 									</div>
 							</div>
 						</div>
-						<div class='col-sm-4 player'>
+						<div class='col-sm-9 player'>
 							<div class='row puzzle-container'>
 								<div class='col-sm-10 puzzle'>
+									<div class='answer-container'>
+										<div id='answer'>
+											<div class="word live">
+												<div class = "letterBox">
+													<p class = "letter l">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter i">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter v">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter e">&nbsp;&nbsp;</p>
+												</div>
+											</div>
+											<div class="word long">
+												<div class = "letterBox">
+													<p class = "letter l">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter o">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter n">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter g">&nbsp;&nbsp;</p>
+												</div>
+												</br/>
+											</div>
+											<div class="word and">
+												<div class = "letterBox">
+													<p class = "letter a">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter n">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter d">&nbsp;&nbsp;</p>
+												</div>
+											</div>
+											<div class="word prosper">
+												<div class = "letterBox">
+													<p class = "letter p">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter r">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter o">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter s">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter p">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter e">&nbsp;&nbsp;</p>
+												</div>
+												<div class = "letterBox">
+													<p class = "letter r">&nbsp;&nbsp;&nbsp;</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='guess-container'>
+										<div class="guessLetter">
+											<input id='guessInput'>
+											<button id='guessButton' type='button'>Guess</button>
+										</div>
+										<div class="guessAnswer">
+											<input id='solveInput'/>
+											<button id='solveButton' type='button'>Solve</button>
+										</div>	
+									</div>
 								</div>
 							</div>
-							<div class='row guess-container'>
-									<div class='col-sm-10 guess'>
+							<div class='row guessed-container'>
+									<div class='col-sm-12 guessed'>
+										<h3>Guessed Letters</h3>
+										<p id='guessed'></p>
 									</div>
 							</div>
 						</div>

@@ -1,13 +1,5 @@
-.titleBar {
-  height: 200px;
-  background-color: pink; }
-
-.notTitleBar {
-  height: 600px; }
-
 .content {
   height: 100%;
-  background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,17 +8,16 @@
 .game {
   height: 100%; }
 
-.image-container {
+.phone-container {
   height: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black; }
-
-.image {
-  height: 80%;
-  background-color: red; }
+  background-image: url("http://www.fresnocellphonerepaircompany.com/uploads/5/4/6/6/54663167/_6131720_orig.jpg");
+  background-size: 160% 115%;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .hint-container {
   height: 30%;
@@ -34,38 +25,127 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white; }
-
-.hint {
-  height: 80%;
-  background-color: green; }
+  margin-top: -44px; }
 
 .player {
-  height: 100%;
-  background-color: yellow; }
+  height: 100%; }
 
 .puzzle-container {
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; }
+
+.guessed-container {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.battery-container {
+  height: 60%; }
+
+.batteryTop-container {
+  height: 20%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.batteryTop {
+  height: 80%;
+  background-color: gray; }
+
+.batteryBottom-container {
+  height: 80%; }
+
+.batteryBottom {
+  height: 100%;
+  background-color: gray; }
+
+.bar {
+  height: 25%;
+  border: solid 3px gray;
   background-color: black; }
 
+.hint {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .puzzle {
-  height: 80%;
-  background-color: red; }
+  height: 100%; }
+
+.answer-container {
+  height: 50%; }
+
+.letterBox {
+  border: solid 2px black;
+  display: inline;
+  font-size: 57.2px;
+  margin: 1.1px; }
+
+.letter {
+  display: inline; }
+
+.word {
+  display: inline; }
+
+.long {
+  margin-left: 33px; }
+
+.prosper {
+  margin-left: 33px; }
 
 .guess-container {
-  height: 30%;
+  margin-top: 33px;
+  height: 40%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white; }
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
 
-.guess {
-  height: 80%;
-  background-color: green; }
+#guessInput {
+  font-size: 22px;
+  width: 44px; }
+
+#guessButton {
+  font-size: 22px;
+  padding: 2.2px; }
+
+#solveInput {
+  font-size: 22px;
+  width: 308px; }
+
+#solveButton {
+  font-size: 22px; }
+
+.guessed {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -33px; }
+
+#guessed {
+  font-size: 22px; }
+
+.notTitleBar {
+  height: 600px;
+  margin-top: -30px; }
+
+.titleBar {
+  height: 280px;
+  background-image: url("http://www.okcdj.com/uploads/5/3/0/0/53004403/170514_orig.gif");
+  background-size: 80% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 60px; }
 
 /*# sourceMappingURL=styles.css.map */
