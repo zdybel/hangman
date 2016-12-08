@@ -2,15 +2,24 @@ $(document).ready(function(){
 
 var guesses = 0;
 
+$('#guessInput').focus();
+
 $('#guessButton').click(function(){
 	var guess= $('#guessInput').val();
 	answer(guess);
 	$('#guessed').append(guess + "              ");
 	$('#guessInput').val("");
+	$('#guessInput').focus();
 	if(guesses ==4){
 		alert("you lose");
 	}
 });
+
+ $('#guessInput').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+            $('#guessButton').click();//Trigger search button click event
+        }
+    });
 
 $('#solveButton').click(function(){
 	var solve= $('#solveInput').val();
@@ -43,6 +52,12 @@ $('#solveButton').click(function(){
 		$('#solveInput').val("");
 	};
 });
+
+$('#solveInput').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+            $('#solveButton').click();//Trigger search button click event
+        }
+    });
 
 $('.hint-container').click(function(){
 	console.log('it works')
