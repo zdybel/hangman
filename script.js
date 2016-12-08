@@ -5,7 +5,7 @@ var guesses = 0;
 $('#guessInput').focus();
 
 $('#guessButton').click(function(){
-	var guess= $('#guessInput').val();
+	var guess= document.getElementById('guessInput').value.toLowerCase();
 	answer(guess);
 	$('#guessed').append(guess + "              ");
 	$('#guessInput').val("");
@@ -18,11 +18,11 @@ $('#guessButton').click(function(){
  $('#guessInput').keypress(function(e){
         if(e.which == 13){//Enter key pressed
             $('#guessButton').click();//Trigger search button click event
-        }
+        };
     });
 
 $('#solveButton').click(function(){
-	var solve= $('#solveInput').val();
+	var solve= document.getElementById('solveInput').value.toLowerCase();
 	solveArray=[]
 	for(i = 0; i < solve.length; i++){
 		if(solve[i] != " "){
