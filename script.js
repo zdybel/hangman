@@ -2,17 +2,30 @@ $(document).ready(function(){
 
 var guesses = 0;
 
+var correctGuesses = 0;
+
+var correctGuessesArray = [""];
+
 $('#guessInput').focus();
 
 $('#guessButton').click(function(){
 	var guess= document.getElementById('guessInput').value.toLowerCase();
-	answer(guess);
-	$('#guessed').append(guess + "              ");
-	$('#guessInput').val("");
-	$('#guessInput').focus();
-	if(guesses ==4){
-		alert("you lose");
-	}
+	if(notGuessed($('guessInput').val()) && guess.match(/[a-z]/i) && $('#guessInput').val().length == 1) {
+		answer(guess);
+		console.log(correctGuessesArray);
+		$('#guessed').append(guess + "              ");
+		$('#guessInput').val("");
+		$('#guessInput').focus();
+		if(guesses ==4){
+			alert("You lose");
+		};
+		if(correctGuesses == 12){
+			alert("You win!")
+		};
+	} 
+	else{
+		$('#guessInput').val("");
+	};
 });
 
  $('#guessInput').keypress(function(e){
@@ -50,6 +63,7 @@ $('#solveButton').click(function(){
 		$('.bar').eq(guesses).css('background-color', 'gray');
 		guesses += 1;
 		$('#solveInput').val("");
+		$('#solveInput').focus();
 	};
 });
 
@@ -78,42 +92,74 @@ function solveMatch(solveArray){
 	}
 };
 
+function notGuessed(guess){
+	for(i = 0; i < correctGuessesArray.length; i++){
+		if(guess != correctGuessesArray[i]){
+			return true;
+		};
+	};
+};
+
 function answer(guess){
 	if(guess == "l"){
 		$('.l').text("L");
+		correctGuessesArray.push(guess);
+		correctGuesses += 1;
 	}
 	else if(guess == "i"){
 		$('.i').text("I");
+		correctGuessesArray.push(guess);
+		correctGuesses += 1;
 	}
 	else if(guess == "v"){
 		$('.v').text("V");
+		correctGuessesArray.push(guess);
+		correctGuesses += 1;
 	}
 	else if(guess == "e"){
 		$('.e').text("E");
+		correctGuessesArray.push(guess);
+		correctGuesses += 1;
 	}
 	else if(guess == "o"){
 		$('.o').text("O");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "n"){
 		$('.n').text("N");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "g"){
 		$('.g').text("G");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "a"){
 		$('.a').text("A");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "d"){
 		$('.d').text("D");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "p"){
 		$('.p').text("P");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "s"){
 		$('.s').text("S");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else if(guess == "r"){
 		$('.r').text("R");
+		correctGuessesArray.push(guess);	
+		correctGuesses += 1;
 	}
 	else{
 		$('.bar').eq(guesses).css('background-color', 'gray');
